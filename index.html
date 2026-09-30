@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SangHyup Lee</title>
+<meta name="description" content="SangHyup Lee — Computer Science & Economics senior aiming for PM, Analytics and SWE roles.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍂</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5ecdc; --surface:#fbf5e9; --text:#3e2b1d; --muted:#7a6350;
+  --accent:#b5541c; --accent-2:#8a5a33; --border:#e0d0b4; --shadow:0 6px 20px rgba(92,58,30,.10);
+}
+:root[data-theme="dark"]{
+  --bg:#1f1611; --surface:#2a1e17; --text:#f0e3cf; --muted:#b9a48c;
+  --accent:#e08a4a; --accent-2:#c9a27a; --border:#443326; --shadow:0 6px 20px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7;transition:background .3s,color .3s}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:var(--accent)}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+nav{max-width:960px;margin:0 auto;padding:.8rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;color:var(--text);text-decoration:none}
+.links{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+.links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500}
+.links a:hover{color:var(--accent)}
+#theme{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:.35rem .8rem;cursor:pointer;font:inherit;font-size:.85rem}
+#theme:hover{border-color:var(--accent)}
+main{max-width:960px;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0 1rem}
+.hero{padding-top:5rem}
+.eyebrow{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+.hero h1{font-size:clamp(2.4rem,7vw,4rem);margin:.5rem 0 1rem}
+.hero p{max-width:640px;color:var(--muted);font-size:1.1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.tag{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:.3rem .9rem;font-size:.88rem;color:var(--accent-2);font-weight:500}
+h2{font-size:1.8rem;margin-bottom:1.2rem}
+h2::after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:.5rem;border-radius:2px}
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.4rem;box-shadow:var(--shadow);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card .icon{font-size:1.7rem}
+.card h3{font-size:1.15rem;margin:.5rem 0 .4rem}
+.card p{color:var(--muted);font-size:.95rem}
+.card small{color:var(--accent-2);font-weight:600}
+.about p{max-width:720px;color:var(--muted);margin-bottom:.8rem}
+.about strong{color:var(--text)}
+footer{max-width:960px;margin:4rem auto 0;padding:1.5rem 1.25rem 2.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;color:var(--muted);font-size:.9rem}
+#count{font-weight:600;color:var(--accent)}
+@media (max-width:560px){.links a{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="#top">SangHyup Lee 🍂</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#goals">Career</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#favorites">Favorites</a>
+      <button id="theme" type="button" aria-label="Toggle dark mode">🌙 Dark</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <span class="eyebrow">Hello, I'm</span>
+    <h1>SangHyup Lee</h1>
+    <p>A Computer Science &amp; Economics senior who enjoys turning data and ideas into products people actually use.</p>
+    <div class="tags">
+      <span class="tag">Computer Science &amp; Economics</span>
+      <span class="tag">Senior</span>
+      <span class="tag">PM · Analytics · SWE</span>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a <strong>senior studying Computer Science and Economics</strong>. I like the way the two fields complement each other: code lets me build things, and economics gives me a way to reason about why people use them and what they are worth.</p>
+    <p>I'm happiest when I'm breaking a messy problem into pieces, looking at the data, and figuring out what to build next.</p>
+  </section>
+
+  <section id="goals">
+    <h2>Career Goals</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🧭</div><h3>Product Management</h3><p>Understanding users, shaping the roadmap, and bringing design, engineering and business together.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Analytics</h3><p>Finding the story in the numbers and turning insights into decisions a team can act on.</p></div>
+      <div class="card"><div class="icon">💻</div><h3>Software Engineering</h3><p>Building reliable, well-crafted software and staying close to how things really work.</p></div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🔍</div><h3>Analysis</h3><p>I enjoy digging into data, spotting patterns, and asking why things work the way they do.</p></div>
+      <div class="card"><div class="icon">💡</div><h3>Idea Thinking</h3><p>Brainstorming product ideas, poking holes in them, and imagining how they could get better.</p></div>
+      <div class="card"><div class="icon">⚽</div><h3>Watching Football</h3><p>Soccer is my favorite thing to watch: the tactics, the tension, and the last-minute drama.</p></div>
+    </div>
+  </section>
+
+  <section id="favorites">
+    <h2>Favorite Spots in Providence</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🍜</div><h3>Nudpob</h3><small>Restaurant</small></div>
+      <div class="card"><div class="icon">🧋</div><h3>HeyTea</h3><small>Cafe</small></div>
+      <div class="card"><div class="icon">☕</div><h3>Denden</h3><small>Cafe / Restaurant</small></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> SangHyup Lee</span>
+  <span>👣 Visitors: <span id="count">…</span></span>
+</footer>
+
+<script>
+(function(){
+  /* ---------- Dark mode ---------- */
+  var root=document.documentElement, btn=document.getElementById('theme'), saved=null;
+  try{saved=localStorage.getItem('theme')}catch(e){}
+  var dark = saved ? saved==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  function apply(){
+    root.setAttribute('data-theme', dark?'dark':'light');
+    btn.textContent = dark ? '☀️ Light' : '🌙 Dark';
+  }
+  apply();
+  btn.addEventListener('click',function(){
+    dark=!dark; apply();
+    try{localStorage.setItem('theme',dark?'dark':'light')}catch(e){}
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  /* ---------- Visitor counter ----------
+     Uses the free counterapi.dev service. Change NAMESPACE to something unique
+     (e.g. your GitHub username) so your count is yours alone. */
+  var NAMESPACE='sanghyup-lee-site', KEY='visits';
+  var el=document.getElementById('count'), counted=false;
+  try{counted=localStorage.getItem('counted')==='1'}catch(e){}
+  var url='https://api.counterapi.dev/v1/'+NAMESPACE+'/'+KEY+(counted?'':'/up');
+  fetch(url).then(function(r){return r.json()}).then(function(d){
+    if(typeof d.count!=='number') throw 0;
+    el.textContent=d.count.toLocaleString();
+    try{localStorage.setItem('counted','1')}catch(e){}
+  }).catch(function(){
+    // Fallback: per-browser count if the service is unreachable
+    var n=1; try{n=(parseInt(localStorage.getItem('localVisits'),10)||0)+1;localStorage.setItem('localVisits',n)}catch(e){}
+    el.textContent=n+' (this browser)';
+  });
+})();
+</script>
+</body>
+</html>
